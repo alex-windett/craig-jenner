@@ -1,0 +1,24 @@
+# Site settings
+title: Craig Jenner – Designer
+
+email: craig@bigfish.co.uk
+
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+assets_path: '{{ site.assets_path }}'
+
+url: "http://Craggles.github.io/" # the base hostname & protocol for your site
+
+github_username: Craggles
+email: tavaro@gmail.com
+phone: 07950591163
+full_name: Craig Jenner
+
+# Build settings
+markdown: kramdown
+
+permalink: pretty

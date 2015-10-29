@@ -1,0 +1,51 @@
+body.page-single-project {
+
+	.body-content-wrapper {
+		padding: 8rem 3rem 0;
+		margin: 0 auto;
+
+		@media #{$large-up} {
+			padding: 6rem 0 0;
+		    width: 75rem;
+		}
+	}
+
+	.project__image {
+		&--devices {
+			margin: 0 auto;
+			display: block;
+		}
+
+		&--second {
+
+			@media #{$medium-up} {
+				width: 50%;
+			}
+		}
+	}
+
+	.left.project__copy--second {
+		padding-left: 0;
+	}
+
+	.right.project__image--second {
+		@media #{$large-up} {
+			padding-left: 5rem;
+		}
+	}
+
+	.project__copy {
+		&--main {
+			padding-bottom: 6.5rem;
+		}
+
+		&--second {
+			padding-top: 1rem;
+			@media #{$medium-up} {
+				width: 50%;
+				padding-top: 0;
+				padding-left: 5rem;
+			}
+		}
+	}
+}

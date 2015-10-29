@@ -1,0 +1,27 @@
+footer {
+	padding-top: 2rem;
+
+	ul {
+		margin-left: 0;
+		list-style: none;
+	}
+
+	li {
+		position: relative;
+		display: inline-block;
+		padding-right: 1rem;
+
+		&:after {
+			content: " | ";
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		&:last-child:after {
+			content: "";
+			padding-right: 0;
+		}
+	}
+}

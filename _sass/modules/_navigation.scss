@@ -1,0 +1,76 @@
+@-webkit-keyframes triggerOpen {
+    from {left: 9.3rem;}
+    to {left: 22rem;}
+}
+
+/* Standard syntax */
+@keyframes triggerOpen {
+    from {left: 9.3rem;}
+    to {left: 22rem;}
+}
+
+@-webkit-keyframes triggerClose {
+	form {left: 22rem;}
+    to {left: 9.3rem;}
+}
+
+/* Standard syntax */
+@keyframes triggerClose {
+	form {left: 22rem;}
+    to {left: 9.3rem;}
+}
+
+.site-header {
+	position: relative;
+	z-index: 1;
+}
+
+.nav__main {
+	position: fixed;
+	display: inline-block;
+	background: $color__cta--bg;
+	margin-left: 0;
+	list-style: none;
+	height: 100%;
+	// display: none;
+
+	li {
+		text-transform: uppercase;
+		border-bottom: lighten($color__cta--bg, 20%) solid 1px;
+		padding: 1rem;
+		color: white;
+		font-family: $font__heading--secondary;
+
+		a {
+			color: white;
+			font-family: $font__heading--secondary;
+		}
+	}
+}
+
+.nav__main--trigger {
+
+	position: fixed;
+	display: none;
+
+	h1 {
+		position: absolute;
+	    left: 1.1rem;
+	    top: 0.6rem;
+
+		font-size: 3.4rem;
+		line-height: 2.7rem;
+		color: white;
+
+		span {
+			color: inherit;
+			font-size: 2.7rem;
+			line-height: 2.7px;
+			font-family: $font__heading--secondary;
+		}
+	}
+	&.triggered {
+	    left: 22rem;
+	    @include animation(triggerOpen, 0.5s, cubic-bezier(0.65, 0.05, 0.36, 1) );
+	}
+}

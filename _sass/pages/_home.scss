@@ -1,0 +1,74 @@
+body.page-home {
+	text-align: center;
+
+	.feature {
+		background: url( $image-path + 'home_cover.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		width: 100%;
+		position: relative;
+		margin-bottom: 7rem;
+
+
+		.page-title {
+			display: inline-block;
+			margin: 0 auto;
+			padding-top: 13%;
+			padding-bottom: 40%;
+			position: relative;
+
+		}
+	}
+
+	.intro {
+		width: 68rem;
+		margin: 0 auto;
+	}
+
+	.projects {
+		margin-top: 3.5rem;
+
+		.item-wrap {
+			position: relative;
+			width: 33.33333%;
+			display: inline-block;
+			float: left;
+			clear: none;
+
+
+			img {
+				@include transition(ease-in-out, 0.5s);
+
+				&:hover {
+					@include transition(ease-in-out, 0.5s);
+
+				    @include greyscale(90%);
+
+				}
+			}
+
+			article {
+				position: absolute;
+				bottom: -1px;
+
+				background: rgba(255, 255, 255, 0.8);
+				padding: 3rem 0;
+
+				p {
+					padding: 0 6.2rem;
+				}
+
+				.cta {
+					width: 24rem;
+				}
+			}
+		}
+	}
+
+	.contact {
+
+		.cta {
+			width: 38rem;
+		}
+	}
+}
