@@ -28,40 +28,19 @@ body_class: home
 
 	<section class="projects clearfix">
 
-		<a href="/balans" class="item-wrap">
-			<img src="../assets/images/balans_cover.png" alt="">
+		{% for post in site.posts reversed %}
+			<a href="{{ post.url | prepend: site.baseurl }}" class="item-wrap">
+				<img src="{{ post.cover_image }}" alt="">
+
 				<article>
-				<h2>ted & muffy</h2>
-				<p>Full ecommerce site selling high-end women’s leather boots.</p>
-				<div class="cta">
-					read more
-				</div>
-
-			</article>
-		</a>
-		<a href="" class="item-wrap">
-			<img src="../assets/images/ted_cover.png" alt="">
-				<article>
-				<h2>ted & muffy</h2>
-				<p>Full ecommerce site selling high-end women’s leather boots.</p>
-				<div class="cta">
-					read more
-				</div>
-
-			</article>
-		</a>
-		<a href="" class="item-wrap">
-			<img src="../assets/images/dc_cover.png" alt="">
-
-			<article>
-				<h2>ted & muffy</h2>
-				<p>Full ecommerce site selling high-end women’s leather boots.</p>
-				<div class="cta">
-					read more
-				</div>
-
-			</article>
-		</a>
+					<h2>{{ post.title }}</h2>
+					<p>{{ post.description }}</p>
+					<div class="cta">
+						Read More
+					</div>
+				</article>
+			</a>
+		{% endfor %}
 	</section>
 </div>
 

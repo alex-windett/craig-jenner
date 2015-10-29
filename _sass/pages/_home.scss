@@ -1,6 +1,10 @@
 body.page-home {
 	text-align: center;
 
+	.content-wrapper {
+	    padding-bottom: 5rem;
+	}
+
 	.feature {
 		background: url( $image-path + 'home_cover.png');
 		background-repeat: no-repeat;
@@ -21,8 +25,13 @@ body.page-home {
 	}
 
 	.intro {
-		width: 68rem;
 		margin: 0 auto;
+		padding: 0 2rem;
+
+		@media #{$large-up} {
+			padding: 0;
+		    width: 68rem;
+		}
 	}
 
 	.projects {
@@ -30,10 +39,14 @@ body.page-home {
 
 		.item-wrap {
 			position: relative;
-			width: 33.33333%;
+			width: 100%;
 			display: inline-block;
 			float: left;
 			clear: none;
+
+			@media #{$medium-up} {
+			    width: 33.33333%;
+			}
 
 
 			img {
