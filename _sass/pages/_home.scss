@@ -1,8 +1,8 @@
 body.page-home {
-	text-align: center;
 
 	.content-wrapper {
 	    padding-bottom: 5rem;
+	    text-align: center;
 	}
 
 	.feature {
@@ -48,15 +48,18 @@ body.page-home {
 			    width: 33.33333%;
 			}
 
-
 			img {
+				display: block;
+				width: 100%;
+
 				@include transition(ease-in-out, 0.5s);
+			}
 
-				&:hover {
+			&:hover {
+
+				img {
 					@include transition(ease-in-out, 0.5s);
-
 				    @include greyscale(90%);
-
 				}
 			}
 
