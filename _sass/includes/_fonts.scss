@@ -9,11 +9,11 @@ $font-path: '../assets/fonts/';
 
 // the name that will be used in font-family property
 // Add in 'fontello' when needed
-$font-families: 'Roboto Black', 'Roboto Light', 'Fontello';
+$font-families: 'Roboto Black', 'Roboto Light';
 
 // the filename of your font without the file extension
 // Add in 'fontello' when needed
-$font-filenames: 'roboto-black-webfont', 'roboto-light-webfont', 'fontello';
+$font-filenames: 'roboto-black-webfont', 'roboto-light-webfont';
 $i: 1;
 
 @each $font-family in $font-families {
@@ -31,6 +31,18 @@ $i: 1;
     }
 
     $i: $i+1;
+
+}
+
+@font-face {
+    font-family: 'fontello';
+    src: url($font-path + 'fontello.eot');
+    src: url($font-path + 'fontello.eot?#iefix') format('embedded-opentype'),
+         url($font-path + 'fontello.woff') format('woff'),
+         url($font-path + 'fontello.ttf') format('truetype'),
+         url($font-path + 'fontello.svg#fontelloregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
