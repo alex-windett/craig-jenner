@@ -1,9 +1,13 @@
 $body-background: #f2f2f2;
 $page-container: #ffffff;
 
+$primary-color: #3cb878;
+
 $color__copy: #565656;
-$color__cta--bg: #3cb878;
+
+$color__cta--bg: $primary-color;
 $color__cta--text: #ffffff;
+
 $color__hr: #cccccc;
 
 $image-path: '../assets/images/';

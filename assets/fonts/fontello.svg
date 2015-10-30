@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2015 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="contact" unicode="&#xe801;" d="m163 850h920c92 0 167-71 167-154v-500c0-88-75-154-162-154 0 0-392 0-659 0 0 0 0-188-362-188 162 33 162 188 162 188-37 0-62 0-62 0-92 0-163 71-163 154v500c-4 83 71 154 159 154z" horiz-adv-x="1250" />
+<glyph glyph-name="cv" unicode="&#xe802;" d="m855 97h-102v154h-153l51 51v454c0 46-39 81-85 81h-469c-46 0-84-35-84-81v-628c0-46 38-82 84-82 0 0 161 0 298 0l39 39 217-217 204 229z m-409 0l77 77v-77h-77z" horiz-adv-x="883" />
+<glyph glyph-name="home" unicode="&#xe806;" d="m562 826l513-445h-154v-401c0-62-48-113-109-113h-154v267c0 0-21 89-89 89h-21c-65 0-89-89-89-89l0-267h-151c-61 0-109 51-109 113v401l-154 0 198 171 0 185h130l0-72 189 161z" horiz-adv-x="1120" />
+<glyph glyph-name="stats" unicode="&#xe807;" d="m628 309c-76-56-142-93-228-93-86 0-152 37-231 93-152-14-152-338-152-442h762c0 100 0 424-151 442z m-228-18c121 0 221 80 255 190 7 4 11 4 11 4h-11c7 24 11 51 11 75 0 38-7 76-25 111 18 7 25 7 25 7h-28c-41 89-135 155-241 155-145 0-266-121-266-269 0-152 121-273 269-273z m666 121c20-17 48-27 89-27l-89 27z m79 162c21-27 38-48 55-52 52-10 152 38 152 38l-207 14z m-335 17c-51-27-144-69-144-69l396-113c-55 44-55 131-79 172l-173 10c4 0 0 0 0 0z m238 125c-34 24-151 31-227 0-80-31-152-118-152-118l148-7c52 28 104 45 159 7 7-3 10-10 14-17l155-7c-38 52-76 128-97 142z" horiz-adv-x="1421" />
+<glyph glyph-name="work" unicode="&#xe808;" d="m975 832h-851c-60 0-106-46-106-106v-624c0-60 46-107 106-107h355c-14-85-78-127-78-127h326c0 0-64 42-78 127h326c61 0 107 47 107 107v624c0 60-46 106-107 106z" horiz-adv-x="1099" />
+</font>
+</defs>
+</svg>

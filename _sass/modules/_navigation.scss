@@ -62,14 +62,24 @@
 		    border-bottom: lighten($color__cta--bg, 20%) solid 1px;
 		}
 
+		&:hover {
+			background: white;
+
+			i,
+			span {
+				color: $primary-color;
+			}
+		}
+
 		&:last-child {
 			border: none;
 		}
 
 		span,
-		img {
+		i {
 			text-align: center;
 			display: block;
+			color: white;
 
 			@media #{$large-up} {
 			    text-align:left;
@@ -78,7 +88,6 @@
 		}
 
 		span {
-			color: white;
 			font-family: $font__heading--secondary;
 
 			@media #{$large-up} {
@@ -91,8 +100,9 @@
 			}
 		}
 
-		img {
+		i {
 			margin: 0 auto;
+			font-size: 2.2rem;
 
 			@media #{$large-up} {
 			    margin: 0;
@@ -114,25 +124,51 @@
 	}
 }
 
-.nav__main--trigger {
+.trigger {
+	@media #{$small-up} {
+	    display: none;
+	}
+
+	@media #{$large-up} {
+	    display: block;
+	}
 
 	position: fixed;
-	display: none;
+	left: 16rem;
+	top: 0;
+	width: 16rem;
+	text-align: center;
 
-	h1 {
-		position: absolute;
-	    left: 1.1rem;
-	    top: 0.6rem;
+	background: url($image-path + 'header/nav-trigger.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 
+    text-decoration: none;
+
+    &:hover {
+    	text-decoration: none;
+    	background: url($image-path + 'header/nav-trigger-hovered.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+    }
+
+	h3 {
+		font-family: $font__heading--main;
 		font-size: 3.4rem;
 		line-height: 2.7rem;
 		color: white;
+		margin-bottom: 0;
+		padding: 2rem 0.7rem 2rem 0;
 
 		span {
 			color: inherit;
 			font-size: 2.7rem;
 			line-height: 2.7px;
 			font-family: $font__heading--secondary;
+		}
+
+		&:hover {
+			color: $primary-color;
 		}
 	}
 	&.triggered {
