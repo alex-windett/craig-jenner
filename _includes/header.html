@@ -1,7 +1,7 @@
 <header class="site-header">
-	<ul class="nav__main mobile">
+	<ul class="nav__main clearfix mobile">
 		<li>
-			<a href='{{ site.baseurl | prepend: site.url }}'>
+			<a href='{{ "/" | prepend: site.baseurl }}'>
 				<i class="icon-home"></i>
 				<span>Home</span>
 			</a>
@@ -25,7 +25,7 @@
 			</a>
 		</li>
 		<li>
-			<a href="..assets/files/" download="cv.png" title="ImageName">
+			<a href="{{ '..assets/files/' | prepend: site.baseurl }}" download="cv.png" title="ImageName">
 				<i class="icon-cv"></i>
 				<span>CV</span>
 			</a>

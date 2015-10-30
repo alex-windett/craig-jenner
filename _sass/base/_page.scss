@@ -12,11 +12,14 @@ body {
 }
 
 #container {
-	width: 90%;
     max-width: 108rem;
     position: relative;
 
 	margin: 0 auto;
+
+	@media #{$large-up} {
+	    width: 90%;
+	}
 
 	.content-wrapper {
 		background: $page-container;
@@ -75,4 +78,10 @@ a:hover,
 a:visited,
 a:focus {
 	color: $color__copy;
+}
+
+.row {
+	width: 100%;
+
+	@extend .clearfix;
 }

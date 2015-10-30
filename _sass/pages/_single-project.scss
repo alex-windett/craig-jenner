@@ -1,5 +1,19 @@
 body.page-single-project {
 
+	.row {
+		@media #{$medium-up} {
+		    padding-bottom: 6.5rem;
+
+		    &:last-child {
+		    	padding-bottom: 0;
+		    }
+		}
+
+		&--zeropadding {
+			padding: 0;
+		}
+	}
+
 	.body-content-wrapper {
 		padding: 8rem 3rem 0;
 		margin: 0 auto;
@@ -8,6 +22,10 @@ body.page-single-project {
 			padding: 6rem 0 0;
 		    width: 75rem;
 		}
+	}
+
+	.hr {
+		width: 100%;
 	}
 
 	.project__image {
@@ -36,7 +54,7 @@ body.page-single-project {
 
 	.project__copy {
 		&--main {
-			padding-bottom: 6.5rem;
+
 		}
 
 		&--second {
@@ -45,6 +63,55 @@ body.page-single-project {
 				width: 50%;
 				padding-top: 0;
 				padding-left: 5rem;
+			}
+		}
+	}
+
+	.image__wrapper {
+		text-align: center;
+
+		img {
+			@media #{$large-up} {
+			    width: 90%;
+			}
+		}
+
+		p {
+			@extend %italic;
+
+			a {
+				color: $primary-color;
+			}
+		}
+
+		.reveal-modal {
+			padding: 2rem;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.more {
+
+		> h3 {
+			text-align: center;
+			margin-bottom: 7rem;
+		}
+
+		&__block {
+			text-align: center;
+			width: 100%;
+
+			@extend .clearfix;
+
+			@media #{$large-up} {
+			    width: 50%;
+			}
+
+			.cta {
+				color: white;
 			}
 		}
 	}

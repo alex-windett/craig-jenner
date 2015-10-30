@@ -72,7 +72,7 @@
 		}
 
 		&:last-child {
-			border: none;
+			border-right: none;
 		}
 
 		span,
@@ -121,7 +121,14 @@
 	    position: fixed;
 	    width: 16rem;
 		z-index: 1;
+		height: 100%;
 	}
+}
+
+.nav__main.desktop {
+	display: none;
+	height: 100%;
+	background: $primary-color;
 }
 
 .trigger {
@@ -136,7 +143,7 @@
 	position: fixed;
 	left: 16rem;
 	top: 0;
-	width: 16rem;
+	width: 13rem;
 	text-align: center;
 
 	background: url($image-path + 'header/nav-trigger.png');
@@ -150,6 +157,10 @@
     	background: url($image-path + 'header/nav-trigger-hovered.png');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
+
+		h3 {
+			color: $primary-color;
+		}
     }
 
 	h3 {
@@ -157,8 +168,10 @@
 		font-size: 3.4rem;
 		line-height: 2.7rem;
 		color: white;
+		width: 11rem;
+
 		margin-bottom: 0;
-		padding: 2rem 0.7rem 2rem 0;
+		padding: 1rem 0 1rem 0;
 
 		span {
 			color: inherit;
@@ -166,13 +179,5 @@
 			line-height: 2.7px;
 			font-family: $font__heading--secondary;
 		}
-
-		&:hover {
-			color: $primary-color;
-		}
-	}
-	&.triggered {
-	    left: 22rem;
-	    @include animation(triggerOpen, 0.5s, cubic-bezier(0.65, 0.05, 0.36, 1) );
 	}
 }
