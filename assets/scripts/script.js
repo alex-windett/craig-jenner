@@ -8,6 +8,8 @@ $(document).ready(function(){
     	$(this).children('article').hide();
     })
 
+    $('.nav__main').clone().appendTo('nav.desktop-nav').removeClass('mobile').addClass('desktop');
+
 
     // $('.nav__main--trigger').click(function(event){
     // 	event.preventDefault();
