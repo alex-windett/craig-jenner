@@ -40,12 +40,10 @@
 	margin-bottom: 0;
 	list-style: none;
 
-
-
 	li {
 		text-transform: uppercase;
 		border-right: lighten($color__cta--bg, 20%) solid 1px;
-		padding: 1rem 0;
+		padding: 1.7rem 0;
 		color: white;
 		font-family: $font__heading--secondary;
 		display: inline-block;
@@ -93,16 +91,12 @@
 			@media #{$large-up} {
 			    vertical-align: bottom;
 			    padding-left: 1.5rem;
-
-			    &.stats {
-			    	padding-left: 0.8rem;
-			    }
 			}
 		}
 
 		i {
 			margin: 0 auto;
-			font-size: 2.2rem;
+			font-size:  2.7rem;;
 
 			@media #{$large-up} {
 			    margin: 0;
@@ -129,6 +123,11 @@
 	display: none;
 	height: 100%;
 	background: $primary-color;
+    padding-top: 2rem;
+
+    li:first-child {
+    	border-top: lighten($color__cta--bg, 20%) solid 1px;
+    }
 }
 
 .trigger {
@@ -138,6 +137,7 @@
 
 	@media #{$large-up} {
 	    display: block;
+	    top: 2.1rem;
 	}
 
 	position: fixed;

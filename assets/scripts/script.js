@@ -62,7 +62,16 @@ $(document).ready(function(){
         // Change the ending of the file source to be the
         // Hi-Res image
         $('img.hi_res').attr('src', function(index, attr){
-            return attr.replace('.png', '_hi-res.png');
+
+            // Changes the ending of image to hi-res photo
+            // Make sure that the image is a png or jpg
+            var ext = fileName.split('.').pop();
+
+            if ( ext === 'jpg' ) {
+                return attr.replace('.jpg', '_hi-res.jpg');
+            } else {
+                return attr.replace('.png', '_hi-res.png');
+            }
         });
     }
 
