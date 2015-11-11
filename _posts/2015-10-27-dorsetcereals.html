@@ -4,29 +4,49 @@ date:   2015-10-27
 
 categories: recent-work
 
-permalink: recent-work/dorsetcereals
+permalink: recent-work/games-animations
 
-title:  Dorset Cereals
+title:  Games & Animations
 description: Full ecommerce site selling high-end women’s leather boots.
 cover_image: ../assets/images/dc_cover.png
 ---
-<img class="center project__image--devices" src="/assets/images/balans_devices.png" alt="">
+<div class="row">
+	<img class="center project__image--devices" src="/assets/images/projects/{{ page.title | slugify: 'raw' }}/dc.png" alt="">
 
-<section class="project__copy--main">
-	<h3>Brief</h3>
-	<p>Balans is a long-running chain of restaurants across London that used to be quite edgy and very popular in the gay scene but after a change in management started to become increasingly mainstream and lose their edge. We were tasked with reinvigorating the brand, injecting it with an adult, risqué, and bohemian personality. This was right up my street.</p>
-	<p>Despite obviously needing to really show off the new character of the brand, the website had to cater to the typical user journeys of a restaurant site: locating restaurants, checking menus, reserving tables, and looking for contact information.</p>
-	<p>The biggest complication with this was that the five different restaurants run different menus, have different opening hours, and run different special offers.</p>
-</section>
-
-<h3>Wireframes & site layout</h3>
-
-<div class="left project__image--second clearfix">
-	<img src="/assets/images/balans_wireframes.png" alt="">
+	<section class="project__copy--main">
+		<h3>Brief</h3>
+		<p>After an extensive rebrand, Dorset Cereals wanted to overhaul their extremely popular Spin to Win instant win game where users could spin a milk bottle to determine what prize they’d win. It obviously had to fit the new pack design which featured woodland characters on various bits of foliage, it had to tie in with the ‘Life Begins at Breakfast’ tagline, the result of the game had to be completely down to chance, and it had to meet a few technical requirements such as feature a looping sequence allowing the game to contact the server and get a result.</p>
+		<p>So I came up with a game which featured the squirrel from the packs trying to get to her breakfast. The user clicks the ‘jump’ button and she gears up to jump, testing the branch she’s on (this is the looping section), then one of four possible outcomes is played: 3 different slapstick lose animations and a triumphant win animation.</p>
+		<p>The game’s done pretty well despite the obvious dropoff when switching over. This was my first instant win game design and remains my favourite. It’s funny, there’s a clear story, and I’m really proud of the animations. The more recent games I’ve designed have focused more on their ability to get people coming back and playing every day (which is, I suppose, the point of them) and so they tend to mimic casino games in their tension and misrepresentation of the incredibly low odds, at the expense of humour and story. </p>
+	</section>
 </div>
 
-<div class="right project__copy--second clearfix">
-	<p>All of the restaurants having different menus and opening times meant that almost all of the user journeys rely on the user choosing a restaurant location first.</p>
-	<p>The landing page for the website lets you either choose a location or go through the member’s area and nothing else. Better to force them to make a choice than make an assumption and give them potentially inaccurate information.</p>
-	<p>After choosing a location the user is taken through to a long page with opening information, contact details, gallery, menu, reservation widget, and job opportunities.</p>
+<!-- Image and copy, swap class names 'left' and 'right' to alter layout -->
+<div class="row">
+	<div class="left project__image--second full clearfix">
+		<img src="/assets/images/projects/{{ page.title | slugify: 'raw' }}/yeo.png" alt="">
+	</div>
+
+	<div class="right project__copy--second full clearfix">
+		<h3>Stop Motion – Yeo Valley</h3>
+		<p>I’ve done quite a lot of animations, both digital and stop motion, for Yeo Valley but this one’s my favourite. The idea is that kids can cut the animals out of the packs and assemble them into these little models, so we shot a couple of films to show them off. This one was just a simple‘Merry Christmas’ message but it came out really well and the client was really happy with it.</p>
+	</div>
+</div>
+
+<!-- Image and copy, swap class names 'left' and 'right' to alter layout -->
+<div class="row">
+	<div class="left project__image--second full clearfix">
+		<img src="/assets/images/projects/{{ page.title | slugify: 'raw' }}/card-game.png" alt="">
+	</div>
+
+	<div class="right project__copy--second full clearfix">
+		<h3>Delve</h3>
+		<p>Delve is a personal project I’ve been working on for almost a year now. It’s a relatively complicated and extremely nerdy card game that plays like a sped up and trimmed down D&D. I’ve designed it purely for myself and my friends but the testing has gone really well so I’m going to look at getting it published.</p>
+	</div>
+</div>
+
+<div class="hr"></div>
+
+<div class="row more">
+	{% include recent-work.html %}
 </div>
