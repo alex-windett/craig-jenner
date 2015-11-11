@@ -27,6 +27,7 @@ body_class: home
 	<h2>Recent work</h2>
 
 	<section class="projects clearfix">
+		<a href="#" name="recent-work"></a>
 
 		{% for post in site.posts reversed %}
 			<a href="{{ post.url | prepend: site.baseurl }}" class="item-wrap">

@@ -9,6 +9,11 @@ html {
 
 body {
 	background: $body-background;
+    padding-bottom: 12rem;
+
+    @media #{$large-up} {
+        padding: 0;
+    }
 }
 
 #container {

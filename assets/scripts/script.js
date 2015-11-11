@@ -25,7 +25,7 @@ $(document).ready(function(){
         } else {
             $('.nav__main.desktop').toggle(effect, 'left', duration);
             $(this).animate({
-                'marginLeft': -Math.abs(navWidth),
+                'marginLeft': '-160px'
             });
         }
     });

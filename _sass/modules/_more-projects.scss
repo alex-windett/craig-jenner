@@ -2,18 +2,23 @@
 
 	> h3 {
 		text-align: center;
+		@media #{$small-only} {
+		    margin-bottom: 3rem;
+		}
 		margin-bottom: 7rem;
 	}
 
 	&__block {
 		text-align: center;
 		width: 100%;
+		margin-bottom: 40px;
 
 		@extend .clearfix;
 
 		@media #{$large-up} {
 		    width: 50%;
 	        padding: 0px 6rem;
+	        margin-bottom: 0;
 		}
 
 		.cta {

@@ -85,7 +85,11 @@ body.page-home {
 	.contact {
 
 		.cta {
-			width: 38rem;
+			width: 45%;
+
+			@media #{$large-up} {
+			    width: 38rem;
+			}
 		}
 	}
 }
