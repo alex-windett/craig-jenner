@@ -5,6 +5,6 @@
 		<h3>{{ post.title }}</h3>
 		<p>{{ post.description }}</p>
 
-		<a href="{{ post.permalink | prepend: site.baseurl }}" class="cta">Read More</a>
+		<a href="{{site.baseurl}}{{post.url}}" class="cta">Read More</a>
 	</div>
 {% endfor %}
