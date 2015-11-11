@@ -47,7 +47,7 @@ $(document).ready(function(){
     // ++++++++++++++++++++++++++++++++
     // Project Page
     // ++++++++++++++++++++++++++++++++
-    if ( $('body.page-single-project').length > 0 ) {
+    if ( $('.body-content-wrapper.post').length > 0 ) {
 
         // For each of the lightbox images clone them into
         // Foundation reveal

@@ -1,0 +1,14 @@
+---
+layout: default
+title: Get In Touch
+body_class: contact
+---
+
+<section class="row intro">
+	<h1>{{ page.title }}</h1>
+	<img src="{{ "../assets/images/profile_image.png" | prepend: site.baseurl" }}" alt="">
+
+	<p>If you’re interested in my work then please either <a href="{{ '../assets/files/' | prepend: site.baseurl }}" download="cv.png" title="ImageName">download my C.V.</a> or send me an email</p>
+
+	<p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+</section>

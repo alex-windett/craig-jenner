@@ -1,4 +1,11 @@
-body.page-single-project {
+.body-content-wrapper.post {
+	padding: 8rem 3rem 0;
+	margin: 0 auto;
+
+	@media #{$large-up} {
+		padding: 6rem 0 0;
+	    width: 75rem;
+	}
 
 	.row {
 		@media #{$medium-up} {
@@ -11,16 +18,6 @@ body.page-single-project {
 
 		&--zeropadding {
 			padding: 0;
-		}
-	}
-
-	.body-content-wrapper {
-		padding: 8rem 3rem 0;
-		margin: 0 auto;
-
-		@media #{$large-up} {
-			padding: 6rem 0 0;
-		    width: 75rem;
 		}
 	}
 
@@ -39,6 +36,10 @@ body.page-single-project {
 			@media #{$medium-up} {
 				width: 50%;
 			}
+
+			&.full {
+				width: 100%;
+			}
 		}
 	}
 
@@ -53,9 +54,6 @@ body.page-single-project {
 	}
 
 	.project__copy {
-		&--main {
-
-		}
 
 		&--second {
 			padding-top: 1rem;
@@ -63,6 +61,12 @@ body.page-single-project {
 				width: 50%;
 				padding-top: 0;
 				padding-left: 5rem;
+			}
+
+			&.full {
+				width: 100%;
+				padding-left: 0;
+				padding-top: 4rem;
 			}
 		}
 	}
