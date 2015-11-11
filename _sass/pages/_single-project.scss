@@ -96,27 +96,4 @@
 			}
 		}
 	}
-
-	.more {
-
-		> h3 {
-			text-align: center;
-			margin-bottom: 7rem;
-		}
-
-		&__block {
-			text-align: center;
-			width: 100%;
-
-			@extend .clearfix;
-
-			@media #{$large-up} {
-			    width: 50%;
-			}
-
-			.cta {
-				color: white;
-			}
-		}
-	}
 }

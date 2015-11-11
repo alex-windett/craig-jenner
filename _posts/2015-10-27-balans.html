@@ -84,19 +84,3 @@ cover_image: ../assets/images/projects/balans/cover.png
 		</div>
 	</div>
 </div>
-
-<div class="hr"></div>
-
-<div class="row more">
-	<h3>More Recent Work</h3>
-
-	{% for post in site.posts limit:2 %}
-		<div class="left more__block">
-			<h3>{{ post.title }}</h3>
-			<p>{{ post.description }}</p>
-
-			<a href="{{ post.permalink | prepend: site.url }}" class="cta">Read More</a>
-		</div>
-	{% endfor %}
-
-</div>

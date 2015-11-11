@@ -1,6 +1,6 @@
 <h3>More Recent Work</h3>
 
-{% for post in site.posts limit:2 %}
+{% for post in site.posts limit:2 reversed %}
 	<div class="left more__block">
 		<h3>{{ post.title }}</h3>
 		<p>{{ post.description }}</p>
